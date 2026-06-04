@@ -8,7 +8,7 @@ import { Preloader } from "@/components/layout/preloader";
 import { CustomCursor } from "@/components/layout/custom-cursor";
 import Navbar from "@/components/layout/navbar";
 import { APP_CONFIG } from "@/lib/constants";
-import { isValidLocale, type Locale } from "@/lib/i18n";
+import { isValidLocale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { getDictionary, getContents } from "@/lib/loaders";
 
@@ -38,14 +38,14 @@ export default async function LangLayout({
   }
 
   const [dictionary, contents] = await Promise.all([
-    getDictionary(lang as Locale),
-    getContents(lang as Locale),
+    getDictionary(lang),
+    getContents(lang),
   ]);
 
   return (
     <html lang={lang} suppressHydrationWarning>
       <body className={`${inter.variable} ${syne.variable} font-sans bg-background text-foreground antialiased`}>
-        <LanguageProvider lang={lang as Locale} dictionary={dictionary} contents={contents}>
+        <LanguageProvider lang={lang} dictionary={dictionary} contents={contents}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
