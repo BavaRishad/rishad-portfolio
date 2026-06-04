@@ -8,10 +8,9 @@ import { Preloader } from "@/components/layout/preloader";
 import { CustomCursor } from "@/components/layout/custom-cursor";
 import Navbar from "@/components/layout/navbar";
 import { APP_CONFIG } from "@/lib/constants";
-import { Locale } from "@/lib/types";
-import { isValidLocale } from "@/lib/i18n";
+import { isValidLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
-import { getDictionary, getContents } from "@/lib/dictionaries";
+import { getDictionary, getContents } from "@/lib/loaders";
 
 const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });

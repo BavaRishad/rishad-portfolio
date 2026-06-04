@@ -8,7 +8,7 @@ import { useMediaQuery, BREAKPOINTS } from "@/hooks/use-media-query";
 import { BlurReveal } from "@/components/effects/blur-reveal";
 import { ProjectModal } from "@/components/modals/project-modal";
 
-export type ProjectItem = {
+type ProjectItem = {
     id: string;
     title: string;
     category: string;

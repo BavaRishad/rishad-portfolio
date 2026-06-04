@@ -1,14 +1,13 @@
 "use client";
 
 import React, { createContext, useContext, useMemo } from "react";
-import { Locale } from "@/lib/types";
+import type { Locale } from "@/lib/i18n";
 
 type Content = Record<string, any>;
 
 interface LanguageContextType {
     language: Locale;
     content: any;
-    setLanguage: (lang: Locale) => void;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -75,16 +74,9 @@ export function LanguageProvider({ children, lang, dictionary, contents }: Langu
         return parseContentWithHtml(merged);
     }, [dictionary, contents]);
 
-    const setLanguage = (newLang: Locale) => {
-        const currentPath = window.location.pathname;
-        const newPath = currentPath.replace(`/${lang}`, `/${newLang}`);
-        window.location.href = newPath;
-    };
-
     const value = {
         language: lang,
         content: processedContent,
-        setLanguage,
     };
 
     return (
