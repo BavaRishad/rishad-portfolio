@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence, useScroll, useTransform, useMotionTemplate } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -35,14 +35,14 @@ export default function Navbar() {
     return startWidth - ratio * (startWidth - containerWidth);
   });
 
-  const navLinks = [
+  const navLinks = useMemo(() => [
     { name: content.nav.home, href: "#home" },
     { name: content.nav.about, href: "#about" },
     { name: content.nav.stack, href: "#stack" },
     { name: content.nav.projects, href: "#projects" },
     { name: content.nav.roadmap, href: "#roadmap" },
     { name: content.nav.contact, href: "#contact" },
-  ];
+  ], [content.nav]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
