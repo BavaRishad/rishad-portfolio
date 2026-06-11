@@ -7,19 +7,29 @@ import {
     HoverCardContent,
     HoverCardTrigger,
 } from "@/components/ui/hover-card";
-
-type StackItem = {
-    name: string;
-    icon: string;
-};
-
-type StackCategory = {
-    title: string;
-    items: StackItem[];
-};
+import type { TechnologyItem } from "@/types/technology";
 
 export default function Stack() {
     const { content } = useLanguage();
+
+    const categories = [
+        {
+            title: content.stack?.categories?.frontend || "Frontend Technologies",
+            items: content.technologies?.frontend || [],
+        },
+        {
+            title: content.stack?.categories?.backend || "Backend Technologies",
+            items: content.technologies?.backend || [],
+        },
+        {
+            title: content.stack?.categories?.database || "Databases & ORMs",
+            items: content.technologies?.database || [],
+        },
+        {
+            title: content.stack?.categories?.tools || "Tools & Infrastructure",
+            items: content.technologies?.tools || [],
+        },
+    ];
 
     return (
         <section className="w-full bg-background text-foreground overflow-hidden relative py-16 md:py-24 lg:py-32 xl:py-40 2xl:py-36">
@@ -31,12 +41,12 @@ export default function Stack() {
                     </BlurReveal>
 
                     <BlurReveal>
-                        <h2 className="title">{content.stack.title}</h2>
+                        <h2 className="title">{content.stack?.title || "STACK"}</h2>
                     </BlurReveal>
                 </div>
 
                 <div className="flex flex-col gap-container mb-6">
-                    {content.stack.items.map((category: StackCategory, catIndex: number) => (
+                    {categories.map((category, catIndex) => (
                         <BlurReveal key={category.title}>
                             <div>
                                 <div className="flex items-center gap-3 mb-6">
@@ -49,7 +59,7 @@ export default function Stack() {
                                 </div>
 
                                 <div className="flex items-center gap-6 flex-wrap mb-6">
-                                    {category.items.map((item: StackItem) => (
+                                    {category.items.map((item: TechnologyItem) => (
                                         <HoverCard key={item.name} openDelay={50} closeDelay={50}>
                                             <HoverCardTrigger asChild>
                                                 <div className="group flex items-center gap-3 py-2.5 px-1 shrink-0 cursor-default">

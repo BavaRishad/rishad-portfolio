@@ -17,7 +17,13 @@
         "cta": "Read Full Version"
     },
     "stack": {
-        "title": "STACK"
+        "title": "STACK",
+        "categories": {
+            "frontend": "Frontend Technologies",
+            "backend": "Backend Technologies",
+            "database": "Databases & ORMs",
+            "tools": "Tools & Infrastructure"
+        }
     },
     "projects": {
         "title": "PROJECTS",
