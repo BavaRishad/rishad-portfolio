@@ -9,7 +9,7 @@ const Separator = () => (
 export default function ManifestoFlow({ reverse = false }: { reverse?: boolean }) {
   const { content } = useLanguage();
 
-  const manifestoItems = content?.manifesto?.items;
+  const manifestoItems = content?.manifesto || [];
 
   return (
     <div className="relative w-full overflow-hidden border-y border-border/50 py-10 select-none pointer-events-none bg-background/50 backdrop-blur-sm">
