@@ -124,7 +124,7 @@ const TimelineNode = ({ item, index, isEven }: { item: any, index: number, isEve
                             </p>
 
                             <div className={cn("flex flex-wrap gap-2 mt-6", isEven ? "md:justify-end" : "justify-start")}>
-                                {item.tags.map((tag: string) => (
+                                {item.stack.map((tag: string) => (
                                     <span
                                         key={tag}
                                         className="text-xs uppercase tracking-wider text-muted-foreground font-medium px-3 py-1 rounded-full border border-border/40 bg-background/50 shadow-sm"
