@@ -25,9 +25,8 @@
     "projectsScrollText": "SCROLL TO EXPLORE",
     "projectsEndText": "END",
     "projectsIntro": "A collection of *experiments*, *products*, and *digital artifacts* forged in the **void**.",
-    "roadmap": {
-        "title": "Roadmap"
-    },
+    "roadmapTitle": "Roadmap",
+    "roadmapDescription": "A roadmap where I share the experiences I've gained throughout my software journey and the technologies I've learned.",
     "contact": {
         "title": "CONTACT",
         "description": "Whether we start fresh to bring a project to life or take an existing system further.",

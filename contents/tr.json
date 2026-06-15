@@ -58,60 +58,57 @@
             ]
         }
     ],
-    "roadmap": {
-        "description": "Yazılım yolculuğum boyunca edindiğim tecrübeleri ve öğrendiğim teknolojileri paylaştığım bir yol haritası.",
-        "items": [
-            {
-                "id": "01",
-                "year": "2022",
-                "description": "Yazılımla ilk kez lisede tanıştım. Nesne tabanlı programlama dersinde C# kullanarak programlamanın temellerini ve mantığını öğrendim.",
-                "stack": [
-                    "C#"
-                ]
-            },
-            {
-                "id": "02",
-                "year": "2023",
-                "description": "HTML, CSS ve ASP.NET öğrenerek statik ve dinamik web siteleri geliştirmeye başladım. Bu dönemde projelerimde veritabanı kullanmayı da öğrendim.",
-                "stack": [
-                    "HTML",
-                    "CSS",
-                    "ASP.NET",
-                    "MySQL"
-                ]
-            },
-            {
-                "id": "03",
-                "year": "2024",
-                "description": "Lisedeki son yılımdı. CSS ile arayüz geliştirme konusunda kendimi iyice ilerlettim ve staj yaptığım yerde ASP.NET ile çalışmaya devam ettim.",
-                "stack": [
-                    "HTML",
-                    "CSS",
-                    "ASP.NET",
-                    "MySQL"
-                ]
-            },
-            {
-                "id": "04",
-                "year": "2025",
-                "description": "Lise sonrasında React, Node.js, Tailwind CSS ve MongoDB gibi modern teknolojilere yöneldim. Bu süreçte birçok web sitesi ve uygulama geliştirdim. Ek olarak Python ile kendi kullanımıma yönelik çeşitli araçlar yazmaya başladım.",
-                "stack": [
-                    "React",
-                    "Node.js",
-                    "TailwindCSS",
-                    "MongoDB"
-                ]
-            },
-            {
-                "id": "05",
-                "year": "2026",
-                "description": "PostAjans'ta stajyer olarak çalışmaya başladım ve burada ağırlıklı olarak Laravel üzerine yoğunlaştım. Bunun yanında boş zamanlarımda Next.js ile web projeleri geliştiriyor; Tauri, FFmpeg gibi teknolojileri de kullanarak çeşitli kişisel projeler üretiyorum.",
-                "stack": [
-                    "Laravel",
-                    "Next.js",
-                    "PostgreSQL"
-                ]
-            }
-        ]
-    }   
+    "roadmap": [
+        {
+            "id": "01",
+            "year": "2022",
+            "description": "Yazılımla ilk kez lisede tanıştım. Nesne tabanlı programlama dersinde C# kullanarak programlamanın temellerini ve mantığını öğrendim.",
+            "stack": [
+                "C#"
+            ]
+        },
+        {
+            "id": "02",
+            "year": "2023",
+            "description": "HTML, CSS ve ASP.NET öğrenerek statik ve dinamik web siteleri geliştirmeye başladım. Bu dönemde projelerimde veritabanı kullanmayı da öğrendim.",
+            "stack": [
+                "HTML",
+                "CSS",
+                "ASP.NET",
+                "MySQL"
+            ]
+        },
+        {
+            "id": "03",
+            "year": "2024",
+            "description": "Lisedeki son yılımdı. CSS ile arayüz geliştirme konusunda kendimi iyice ilerlettim ve staj yaptığım yerde ASP.NET ile çalışmaya devam ettim.",
+            "stack": [
+                "HTML",
+                "CSS",
+                "ASP.NET",
+                "MySQL"
+            ]
+        },
+        {
+            "id": "04",
+            "year": "2025",
+            "description": "Lise sonrasında React, Node.js, Tailwind CSS ve MongoDB gibi modern teknolojilere yöneldim. Bu süreçte birçok web sitesi ve uygulama geliştirdim. Ek olarak Python ile kendi kullanımıma yönelik çeşitli araçlar yazmaya başladım.",
+            "stack": [
+                "React",
+                "Node.js",
+                "TailwindCSS",
+                "MongoDB"
+            ]
+        },
+        {
+            "id": "05",
+            "year": "2026",
+            "description": "PostAjans'ta stajyer olarak çalışmaya başladım ve burada ağırlıklı olarak Laravel üzerine yoğunlaştım. Bunun yanında boş zamanlarımda Next.js ile web projeleri geliştiriyor; Tauri, FFmpeg gibi teknolojileri de kullanarak çeşitli kişisel projeler üretiyorum.",
+            "stack": [
+                "Laravel",
+                "Next.js",
+                "PostgreSQL"
+            ]
+        }
+    ]   
 }

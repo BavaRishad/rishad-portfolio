@@ -58,60 +58,57 @@
             ]
         }
     ],
-    "roadmap": {
-        "description": "A roadmap where I share the experiences I've gained throughout my software journey and the technologies I've learned.",
-        "items": [
-            {
-                "id": "01",
-                "year": "2022",
-                "description": "I first got introduced to software development in high school. I learned the fundamentals and logic of programming using C# in an object-oriented programming class.",
-                "stack": [
-                    "C#"
-                ]
-            },
-            {
-                "id": "02",
-                "year": "2023",
-                "description": "I started developing static and dynamic websites by learning HTML, CSS, and ASP.NET. During this period, I also learned how to use databases in my projects.",
-                "stack": [
-                    "HTML",
-                    "CSS",
-                    "ASP.NET",
-                    "MySQL"
-                ]
-            },
-            {
-                "id": "03",
-                "year": "2024",
-                "description": "It was my last year of high school. I significantly improved my UI development skills with CSS and continued working with ASP.NET at my internship.",
-                "stack": [
-                    "HTML",
-                    "CSS",
-                    "ASP.NET",
-                    "MySQL"
-                ]
-            },
-            {
-                "id": "04",
-                "year": "2025",
-                "description": "After high school, I turned to modern technologies like React, Node.js, Tailwind CSS, and MongoDB. During this period, I developed many websites and applications. Additionally, I started writing various tools in Python for my personal use.",
-                "stack": [
-                    "React",
-                    "Node.js",
-                    "TailwindCSS",
-                    "MongoDB"
-                ]
-            },
-            {
-                "id": "05",
-                "year": "2026",
-                "description": "I started working as an intern at PostAjans, where I focused mainly on Laravel. In addition, I develop web projects using Next.js in my free time and build various personal projects utilizing technologies like Tauri and FFmpeg.",
-                "stack": [
-                    "Laravel",
-                    "Next.js",
-                    "PostgreSQL"
-                ]
-            }
-        ]
-    }
+    "roadmap": [
+        {
+            "id": "01",
+            "year": "2022",
+            "description": "I first got introduced to software development in high school. I learned the fundamentals and logic of programming using C# in an object-oriented programming class.",
+            "stack": [
+                "C#"
+            ]
+        },
+        {
+            "id": "02",
+            "year": "2023",
+            "description": "I started developing static and dynamic websites by learning HTML, CSS, and ASP.NET. During this period, I also learned how to use databases in my projects.",
+            "stack": [
+                "HTML",
+                "CSS",
+                "ASP.NET",
+                "MySQL"
+            ]
+        },
+        {
+            "id": "03",
+            "year": "2024",
+            "description": "It was my last year of high school. I significantly improved my UI development skills with CSS and continued working with ASP.NET at my internship.",
+            "stack": [
+                "HTML",
+                "CSS",
+                "ASP.NET",
+                "MySQL"
+            ]
+        },
+        {
+            "id": "04",
+            "year": "2025",
+            "description": "After high school, I turned to modern technologies like React, Node.js, Tailwind CSS, and MongoDB. During this period, I developed many websites and applications. Additionally, I started writing various tools in Python for my personal use.",
+            "stack": [
+                "React",
+                "Node.js",
+                "TailwindCSS",
+                "MongoDB"
+            ]
+        },
+        {
+            "id": "05",
+            "year": "2026",
+            "description": "I started working as an intern at PostAjans, where I focused mainly on Laravel. In addition, I develop web projects using Next.js in my free time and build various personal projects utilizing technologies like Tauri and FFmpeg.",
+            "stack": [
+                "Laravel",
+                "Next.js",
+                "PostgreSQL"
+            ]
+        }
+    ]
 }

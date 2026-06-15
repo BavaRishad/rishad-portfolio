@@ -9,7 +9,7 @@ import { useLanguage } from "@/providers/language-provider";
 export default function Roadmap() {
     const containerRef = useRef<HTMLDivElement>(null);
     const { content } = useLanguage();
-    const roadmapItems = content.roadmap.items;
+    const roadmapItems = content.roadmap || [];
 
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -34,7 +34,7 @@ export default function Roadmap() {
                 className="absolute top-0 left-0 right-0 bottom-0 pointer-events-none flex items-center justify-center opacity-[0.02] z-0 overflow-hidden"
             >
                 <div className="text-[20vw] font-black tracking-tighter uppercase whitespace-nowrap">
-                    {content.roadmap.title}
+                    {content.roadmapTitle}
                 </div>
             </motion.div>
 
@@ -49,13 +49,13 @@ export default function Roadmap() {
 
                     <BlurReveal>
                         <h2 className="title">
-                            {content.roadmap.title}
+                            {content.roadmapTitle}
                         </h2>
                     </BlurReveal>
 
                     <BlurReveal>
                         <p className="text-lg mt-3 max-w-xl italic font-medium tracking-tight text-foreground/60">
-                            {content.roadmap.description}
+                            {content.roadmapDescription}
                         </p>
                     </BlurReveal>
                 </div>

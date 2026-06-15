@@ -25,9 +25,8 @@
     "projectsScrollText": "KEŞFETMEK İÇİN KAYDIR",
     "projectsEndText": "SON",
     "projectsIntro": "*deneyler*, *ürünler* ve *dijital eserlerden* oluşan, **boşlukta** şekillendirilmiş bir koleksiyon.",
-    "roadmap": {
-        "title": "Yol Haritası"
-    },
+    "roadmapTitle": "Yol Haritası",
+    "roadmapDescription": "Yazılım yolculuğum boyunca edindiğim tecrübeleri ve öğrendiğim teknolojileri paylaştığım bir yol haritası.",
     "contact": {
         "title": "İletişim",
         "description": "İster bir projeyi hayata geçirmek için yeni bir başlangıç yapalım, ister mevcut bir sistemi daha ileri taşıyalım.",
