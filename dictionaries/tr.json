@@ -31,6 +31,7 @@
     },
     "contact": {
         "title": "İletişim",
+        "description": "İster bir projeyi hayata geçirmek için yeni bir başlangıç yapalım, ister mevcut bir sistemi daha ileri taşıyalım.",
         "send_email": "E-posta Gönder",
         "direct_line": "Telefon Numarası",
         "all_rights_reserved": "TÜM HAKLARI SAKLIDIR.",

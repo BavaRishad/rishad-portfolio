@@ -31,6 +31,7 @@
     },
     "contact": {
         "title": "CONTACT",
+        "description": "Whether we start fresh to bring a project to life or take an existing system further.",
         "send_email": "Send an Email",
         "direct_line": "Direct Line",
         "all_rights_reserved": "ALL RIGHTS RESERVED.",

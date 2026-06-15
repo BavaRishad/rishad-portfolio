@@ -122,8 +122,5 @@
                 ]
             }
         ]
-    },
-    "contact": {
-        "description": "Whether we start fresh to bring a project to life or take an existing system further."
     }
 }
