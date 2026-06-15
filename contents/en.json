@@ -73,16 +73,16 @@
             {
                 "id": "01",
                 "year": "2022",
-                "description": "I first started programming in high school. In an object-oriented programming course, I learned the fundamentals and logic of programming using C#.",
-                "tags": [
+                "description": "I first got introduced to software development in high school. I learned the fundamentals and logic of programming using C# in an object-oriented programming class.",
+                "stack": [
                     "C#"
                 ]
             },
             {
                 "id": "02",
                 "year": "2023",
-                "description": "I began building static and dynamic websites by learning HTML, CSS, and ASP.NET. I also learned how to use databases in my projects.",
-                "tags": [
+                "description": "I started developing static and dynamic websites by learning HTML, CSS, and ASP.NET. During this period, I also learned how to use databases in my projects.",
+                "stack": [
                     "HTML",
                     "CSS",
                     "ASP.NET",
@@ -92,8 +92,8 @@
             {
                 "id": "03",
                 "year": "2024",
-                "description": "It was my final year of high school. I fully improved myself in UI development with CSS and continued writing ASP.NET at the place where I was doing my internship.",
-                "tags": [
+                "description": "It was my last year of high school. I significantly improved my UI development skills with CSS and continued working with ASP.NET at my internship.",
+                "stack": [
                     "HTML",
                     "CSS",
                     "ASP.NET",
@@ -103,8 +103,8 @@
             {
                 "id": "04",
                 "year": "2025",
-                "description": "After graduating from high school, I focused on technologies such as React, Node.js, Tailwind CSS, and MongoDB. During my learning process, I developed many websites and applications. Additionally, I started writing simple tools in Python for my own use.",
-                "tags": [
+                "description": "After high school, I turned to modern technologies like React, Node.js, Tailwind CSS, and MongoDB. During this period, I developed many websites and applications. Additionally, I started writing various tools in Python for my personal use.",
+                "stack": [
                     "React",
                     "Node.js",
                     "TailwindCSS",
@@ -114,8 +114,8 @@
             {
                 "id": "05",
                 "year": "2026",
-                "description": "I am currently doing an internship at a place called PostAjans. Here, I have focused on Laravel. Additionally, in my free time, I develop websites with Next.js; with the help of AI, even if I do not fully know a language, I create projects using various technologies such as Rust, Tauri, and FFmpeg.",
-                "tags": [
+                "description": "I started working as an intern at PostAjans, where I focused mainly on Laravel. In addition, I develop web projects using Next.js in my free time and build various personal projects utilizing technologies like Tauri and FFmpeg.",
+                "stack": [
                     "Laravel",
                     "Next.js",
                     "PostgreSQL"
