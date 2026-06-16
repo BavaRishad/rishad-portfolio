@@ -98,7 +98,7 @@ export function Preloader() {
               <div className="absolute inset-3 rounded-full border border-border/50 bg-secondary/5 backdrop-blur-md" />
 
               <img
-                src="/logo.PNG"
+                src="/logo.png"
                 alt="Logo"
                 className="w-90 h-90 object-contain z-10"
               />
