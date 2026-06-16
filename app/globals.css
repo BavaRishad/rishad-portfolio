@@ -53,7 +53,6 @@
   }
 }
 
-
 /* shadcn-ui only */
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -164,7 +163,6 @@
 }
 
 @layer components {
-
   .title {
     @apply text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter text-foreground uppercase leading-none;
   }
@@ -188,5 +186,4 @@
   .highlight-text-tertiary {
     @apply text-foreground font-bold;
   }
-
 }

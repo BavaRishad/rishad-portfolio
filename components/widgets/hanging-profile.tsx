@@ -18,7 +18,7 @@ export function HangingProfile() {
     isDragging: false,
     dragX: 0,
     dragY: 0,
-    currentLength: ropeLength
+    currentLength: ropeLength,
   });
 
   useEffect(() => {
@@ -26,10 +26,12 @@ export function HangingProfile() {
 
     const updatePhysics = (time: number) => {
       if (!state.current.isDragging) {
+        state.current.currentLength +=
+          (ropeLength - state.current.currentLength) * 0.1;
 
-        state.current.currentLength += (ropeLength - state.current.currentLength) * 0.1;
-
-        const acceleration = (-gravity / state.current.currentLength) * Math.sin(state.current.angle);
+        const acceleration =
+          (-gravity / state.current.currentLength) *
+          Math.sin(state.current.angle);
 
         state.current.velocity += acceleration;
         state.current.velocity *= damping;
@@ -49,7 +51,8 @@ export function HangingProfile() {
         }
 
         state.current.angle += (targetAngle - state.current.angle) * 0.4;
-        state.current.currentLength += (targetLength - state.current.currentLength) * 0.4;
+        state.current.currentLength +=
+          (targetLength - state.current.currentLength) * 0.4;
         state.current.velocity = 0;
       }
 
@@ -102,7 +105,10 @@ export function HangingProfile() {
   };
 
   return (
-    <div ref={containerRef} className="relative w-[300px] h-[350px] flex justify-center -mt-4">
+    <div
+      ref={containerRef}
+      className="relative w-[300px] h-[350px] flex justify-center -mt-4"
+    >
       <svg className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-visible">
         <line
           ref={ropeRef}
@@ -115,8 +121,20 @@ export function HangingProfile() {
           className="text-foreground/20"
           strokeLinecap="round"
         />
-        <circle cx="150" cy="0" r="5" fill="currentColor" className="text-foreground/40" />
-        <circle cx="150" cy="0" r="2" fill="currentColor" className="text-background" />
+        <circle
+          cx="150"
+          cy="0"
+          r="5"
+          fill="currentColor"
+          className="text-foreground/40"
+        />
+        <circle
+          cx="150"
+          cy="0"
+          r="2"
+          fill="currentColor"
+          className="text-background"
+        />
       </svg>
 
       <div
@@ -127,18 +145,22 @@ export function HangingProfile() {
           left: "50%",
           marginLeft: "-70px",
           transformOrigin: "center top",
-          touchAction: "none"
+          touchAction: "none",
         }}
       >
         <div className="w-20 h-20 rounded-full overflow-hidden border border-foreground/20 mb-3 bg-foreground/5 flex items-center justify-center pointer-events-none group-hover:border-foreground/40 transition-colors duration-300">
-          <User className="w-10 h-10 text-foreground/40 group-hover:text-foreground/70 transition-colors duration-300" />
+          <img
+            src="/10.jpeg"
+            alt="Rishad"
+            className="w-full h-full object-cover"
+          />
         </div>
         <div className="flex flex-col items-center gap-1 pointer-events-none">
           <span className="text-xs font-bold tracking-[0.2em] text-foreground/80">
-            KINTARO
+            RISHAD
           </span>
-          <span className="text-[10px] uppercase tracking-wider text-muted-foreground">
-            Developer
+          <span className="block w-32 text-center text-[10px] uppercase tracking-wider text-muted-foreground">
+            MERN STACK Developer
           </span>
         </div>
 

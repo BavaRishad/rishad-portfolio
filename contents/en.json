@@ -1,114 +1,80 @@
 {
-    "about": {
-        "intro": "A developer who grows through *self-driven projects* and turns ideas into **real products**.",
-        "description": "A *web development-focused* mindset; building on both frontend and backend, learning new technologies through **hands-on experimentation**, and prioritizing ***maintainable code***.",
-        "full": "I have been actively involved in software development for the past few years, mostly improving myself through my own projects. Turning an idea into a working product is the part I enjoy the most.\n\nI mainly work in web development. I have built projects using technologies such as React, Next.js, Node.js, Express, and Laravel, working on both frontend and backend. I also gained experience in data management with MongoDB and PostgreSQL. Additionally, I developed desktop applications using C# and WinForms, and more recently started experimenting with lightweight modern desktop apps using Tauri (Rust).\n\nDepending on the need, I also work with different tools. For example, I have built projects involving media processing using FFmpeg. I enjoy exploring new technologies, and I generally believe the best way to learn something is by using it directly.\n\nIn my projects, I don't consider it enough for something to just \"work\"; I try to keep things as clean, understandable, and maintainable as possible. When I face a problem, instead of quickly moving on, I prefer to dig into it and understand how it actually works.\n\nMy current goal is to work on larger, real-world impactful projects and further improve myself, especially in backend development and system design."
+  "about": {
+    "intro": "A developer who grows through *self-driven projects* and turns ideas into **real products**.",
+    "description": "A *web development-focused* mindset; building on both frontend and backend, learning new technologies through **hands-on experimentation**, and prioritizing ***maintainable code***.",
+    "full": "I have been actively involved in software development for the past few years, mostly improving myself through my own projects. Turning an idea into a working product is the part I enjoy the most.\n\nI mainly work in web development. I have built projects using technologies such as React, Next.js, Node.js, Express, and Laravel, working on both frontend and backend. I also gained experience in data management with MongoDB and PostgreSQL. Additionally, I developed desktop applications using C# and WinForms, and more recently started experimenting with lightweight modern desktop apps using Tauri (Rust).\n\nDepending on the need, I also work with different tools. For example, I have built projects involving media processing using FFmpeg. I enjoy exploring new technologies, and I generally believe the best way to learn something is by using it directly.\n\nIn my projects, I don't consider it enough for something to just \"work\"; I try to keep things as clean, understandable, and maintainable as possible. When I face a problem, instead of quickly moving on, I prefer to dig into it and understand how it actually works.\n\nMy current goal is to work on larger, real-world impactful projects and further improve myself, especially in backend development and system design."
+  },
+  "manifesto": [
+    "RADICAL TRANSPARENCY",
+    "INTENTIONAL MINIMALISM",
+    "ARCHITECTURAL INTEGRITY",
+    "FIRST PRINCIPLES THINKING",
+    "PERFORMANCE WITHOUT COMPROMISE",
+    "SCALABLE VISION"
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Aether Media",
+      "category": "Media Tool",
+      "year": "2026",
+      "description": "Aether Media is a powerful desktop media converter built with Tauri, supporting video, image and audio format conversions with batch processing.",
+      "image": "/projects/20260427093247885.jpg",
+      "repo": "https://github.com/xkintaro/aether-media",
+      "stack": ["FFmpeg", "Rust", "Tauri", "React", "TailwindCSS"]
     },
-    "manifesto": [
-        "RADICAL TRANSPARENCY",
-        "INTENTIONAL MINIMALISM",
-        "ARCHITECTURAL INTEGRITY",
-        "FIRST PRINCIPLES THINKING",
-        "PERFORMANCE WITHOUT COMPROMISE",
-        "SCALABLE VISION"
-    ],
-    "projects": [
-        {
-            "id": "1",
-            "title": "Aether Media",
-            "category": "Media Tool",
-            "year": "2026",
-            "description": "Aether Media is a powerful desktop media converter built with Tauri, supporting video, image and audio format conversions with batch processing.",
-            "image": "/projects/20260427093247885.jpg",
-            "repo": "https://github.com/xkintaro/aether-media",
-            "stack": [
-                "FFmpeg",
-                "Rust",
-                "Tauri",
-                "React",
-                "TailwindCSS"
-            ]
-        },
-        {
-            "id": "2",
-            "title": "Aether JS",
-            "category": "Library",
-            "year": "2026",
-            "description": "AetherJS is a utility-first JavaScript controller built for modern web applications, minimizing DOM manipulation. Say goodbye to complex state management.",
-            "image": "/projects/20260427093247620.jpg",
-            "demo": "https://xkintaro.github.io/aether-js-documentation/en.html",
-            "repo": "https://github.com/xkintaro/aether-js",
-            "stack": [
-                "JavaScript"
-            ]
-        },
-        {
-            "id": "3",
-            "title": "File Manager",
-            "category": "Web Application",
-            "year": "2025",
-            "description": "Kintaro File Manager is a self-hosted file management application with a cyberpunk-inspired interface. It lets you upload, organize, tag, and filter any type of file through a sleek, modern web interface backed by SQLite — no external database required.",
-            "image": "/projects/20260305210513749.jpg",
-            "repo": "https://github.com/xkintaro/file-manager",
-            "stack": [
-                "React",
-                "TailwindCSS",
-                "Node.js",
-                "SQLite"
-            ]
-        }
-    ],
-    "roadmap": [
-        {
-            "id": "01",
-            "year": "2022",
-            "description": "I first got introduced to software development in high school. I learned the fundamentals and logic of programming using C# in an object-oriented programming class.",
-            "stack": [
-                "C#"
-            ]
-        },
-        {
-            "id": "02",
-            "year": "2023",
-            "description": "I started developing static and dynamic websites by learning HTML, CSS, and ASP.NET. During this period, I also learned how to use databases in my projects.",
-            "stack": [
-                "HTML",
-                "CSS",
-                "ASP.NET",
-                "MySQL"
-            ]
-        },
-        {
-            "id": "03",
-            "year": "2024",
-            "description": "It was my last year of high school. I significantly improved my UI development skills with CSS and continued working with ASP.NET at my internship.",
-            "stack": [
-                "HTML",
-                "CSS",
-                "ASP.NET",
-                "MySQL"
-            ]
-        },
-        {
-            "id": "04",
-            "year": "2025",
-            "description": "After high school, I turned to modern technologies like React, Node.js, Tailwind CSS, and MongoDB. During this period, I developed many websites and applications. Additionally, I started writing various tools in Python for my personal use.",
-            "stack": [
-                "React",
-                "Node.js",
-                "TailwindCSS",
-                "MongoDB"
-            ]
-        },
-        {
-            "id": "05",
-            "year": "2026",
-            "description": "I started working as an intern at PostAjans, where I focused mainly on Laravel. In addition, I develop web projects using Next.js in my free time and build various personal projects utilizing technologies like Tauri and FFmpeg.",
-            "stack": [
-                "Laravel",
-                "Next.js",
-                "PostgreSQL"
-            ]
-        }
-    ]
+    {
+      "id": "2",
+      "title": "Aether JS",
+      "category": "Library",
+      "year": "2026",
+      "description": "AetherJS is a utility-first JavaScript controller built for modern web applications, minimizing DOM manipulation. Say goodbye to complex state management.",
+      "image": "/projects/20260427093247620.jpg",
+      "demo": "https://xkintaro.github.io/aether-js-documentation/en.html",
+      "repo": "https://github.com/xkintaro/aether-js",
+      "stack": ["JavaScript"]
+    },
+    {
+      "id": "3",
+      "title": "File Manager",
+      "category": "Web Application",
+      "year": "2025",
+      "description": "Kintaro File Manager is a self-hosted file management application with a cyberpunk-inspired interface. It lets you upload, organize, tag, and filter any type of file through a sleek, modern web interface backed by SQLite — no external database required.",
+      "image": "/projects/20260305210513749.jpg",
+      "repo": "https://github.com/xkintaro/file-manager",
+      "stack": ["React", "TailwindCSS", "Node.js", "SQLite"]
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "01",
+      "year": "2022",
+      "description": "I first got introduced to software development in high school. I learned the fundamentals and logic of programming using C# in an object-oriented programming class.",
+      "stack": ["C#"]
+    },
+    {
+      "id": "02",
+      "year": "2023",
+      "description": "I started developing static and dynamic websites by learning HTML, CSS, and ASP.NET. During this period, I also learned how to use databases in my projects.",
+      "stack": ["HTML", "CSS", "ASP.NET", "MySQL"]
+    },
+    {
+      "id": "03",
+      "year": "2024",
+      "description": "It was my last year of high school. I significantly improved my UI development skills with CSS and continued working with ASP.NET at my internship.",
+      "stack": ["HTML", "CSS", "ASP.NET", "MySQL"]
+    },
+    {
+      "id": "04",
+      "year": "2025",
+      "description": "After high school, I turned to modern technologies like React, Node.js, Tailwind CSS, and MongoDB. During this period, I developed many websites and applications. Additionally, I started writing various tools in Python for my personal use.",
+      "stack": ["React", "Node.js", "TailwindCSS", "MongoDB"]
+    },
+    {
+      "id": "05",
+      "year": "2026",
+      "description": "I started working as an intern at Knovista Technologies, where I focused mainly on Laravel. In addition, I develop web projects using Next.js in my free time and build various personal projects utilizing technologies like Tauri and FFmpeg.",
+      "stack": ["Laravel", "Next.js", "PostgreSQL"]
+    }
+  ]
 }

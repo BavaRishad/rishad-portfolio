@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'tr' }];
+  return [{ lang: "en" }, { lang: "tr" }];
 }
 
 export default async function LangLayout({
@@ -45,8 +45,15 @@ export default async function LangLayout({
 
   return (
     <html lang={lang} suppressHydrationWarning>
-      <body className={`${inter.variable} ${syne.variable} font-sans bg-background text-foreground antialiased`}>
-        <LanguageProvider lang={lang} dictionary={dictionary} contents={contents} shared={shared}>
+      <body
+        className={`${inter.variable} ${syne.variable} font-sans bg-background text-foreground antialiased`}
+      >
+        <LanguageProvider
+          lang={lang}
+          dictionary={dictionary}
+          contents={contents}
+          shared={shared}
+        >
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"

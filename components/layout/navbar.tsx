@@ -2,9 +2,14 @@
 
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence, useScroll, useTransform, useMotionTemplate } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useTransform,
+  useMotionTemplate,
+} from "framer-motion";
 import { Menu, X } from "lucide-react";
-import LanguageSwitcher from "@/components/widgets/language-switcher";
 import ThemeSwitcher from "@/components/widgets/theme-switcher";
 import { useLanguage } from "@/providers/language-provider";
 import { useLenis } from "@/providers/smooth-scroll-provider";
@@ -20,8 +25,13 @@ export default function Navbar() {
 
   const { scrollY } = useScroll();
 
-  const bgOpacity = useTransform(scrollY, (val) => Math.min(val / scrollHeight, 1));
-  const backdropBlur = useTransform(scrollY, (val) => Math.min(val / scrollHeight, 1) * 16);
+  const bgOpacity = useTransform(scrollY, (val) =>
+    Math.min(val / scrollHeight, 1),
+  );
+  const backdropBlur = useTransform(
+    scrollY,
+    (val) => Math.min(val / scrollHeight, 1) * 16,
+  );
   const backdropFilter = useMotionTemplate`blur(${backdropBlur}px)`;
 
   const py = useTransform(scrollY, (val) => {
@@ -35,14 +45,17 @@ export default function Navbar() {
     return startWidth - ratio * (startWidth - containerWidth);
   });
 
-  const navLinks = useMemo(() => [
-    { name: content.nav.home, href: "#home" },
-    { name: content.nav.about, href: "#about" },
-    { name: content.nav.stack, href: "#stack" },
-    { name: content.nav.projects, href: "#projects" },
-    { name: content.nav.roadmap, href: "#roadmap" },
-    { name: content.nav.contact, href: "#contact" },
-  ], [content.nav]);
+  const navLinks = useMemo(
+    () => [
+      { name: content.nav.home, href: "#home" },
+      { name: content.nav.about, href: "#about" },
+      { name: content.nav.stack, href: "#stack" },
+      { name: content.nav.projects, href: "#projects" },
+      { name: content.nav.roadmap, href: "#roadmap" },
+      { name: content.nav.contact, href: "#contact" },
+    ],
+    [content.nav],
+  );
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -81,7 +94,10 @@ export default function Navbar() {
     };
   }, [isMobileMenuOpen, lenis]);
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
     e.preventDefault();
     const targetId = href.replace("#", "");
     const elem = document.getElementById(targetId);
@@ -116,7 +132,10 @@ export default function Navbar() {
       }}
       className="fixed top-0 left-0 right-0 z-[100] transition-colors duration-300"
     >
-      <div ref={dummyRef} className="container invisible absolute pointer-events-none -z-50" />
+      <div
+        ref={dummyRef}
+        className="container invisible absolute pointer-events-none -z-50"
+      />
 
       <motion.div
         style={{
@@ -139,7 +158,7 @@ export default function Navbar() {
           className="relative z-[110] flex items-center gap-2 group"
         >
           <span className="text-xl sm:text-2xl font-black tracking-tighter uppercase text-foreground transition-all duration-300 group-hover:opacity-70">
-            kintaro
+            RISXD
           </span>
         </Link>
 
@@ -160,7 +179,6 @@ export default function Navbar() {
           </ul>
 
           <div className="flex items-center gap-3">
-            <LanguageSwitcher />
             <ThemeSwitcher />
           </div>
         </div>
@@ -196,9 +214,9 @@ export default function Navbar() {
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{
-                      delay: 0.1 + (i * 0.05),
+                      delay: 0.1 + i * 0.05,
                       duration: 0.5,
-                      ease: [0.22, 1, 0.36, 1]
+                      ease: [0.22, 1, 0.36, 1],
                     }}
                   >
                     <Link
@@ -221,7 +239,6 @@ export default function Navbar() {
                 className="mt-8 flex items-center justify-between"
               >
                 <div className="flex items-center gap-4">
-                  <LanguageSwitcher />
                   <ThemeSwitcher />
                 </div>
               </motion.div>
